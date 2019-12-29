@@ -13,5 +13,7 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /home/nahid/app/requirements.txt
 RUN pip install -r requirements.txt
 
+COPY ./.env.sample /home/nahid/app/.env
+
 USER nahid
 COPY . /app/
