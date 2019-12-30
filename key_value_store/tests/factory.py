@@ -12,4 +12,4 @@ class KeyValueFactory(DjangoModelFactory):
 
     key = fake.name()
     value = fake.name()
-    ttl = 5
+    ttl = 300
