@@ -44,5 +44,5 @@ def user2(db):
 
 @pytest.fixture
 def auth_client2(client2, user2):
-    client.force_authenticate(user2)
-    return client
+    client2.force_authenticate(user2)
+    return client2
